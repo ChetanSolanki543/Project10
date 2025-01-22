@@ -24,7 +24,7 @@ import com.rays.dto.UserDTO;
  */
 @Component
 public class FrontCtl extends HandlerInterceptorAdapter {
-
+	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {

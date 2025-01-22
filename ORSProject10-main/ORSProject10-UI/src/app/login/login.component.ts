@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms'; 
 import { HttpServiceService } from '../http-service.service';
 import { Router } from '@angular/router';
 import { DataValidator } from '../utility/data-validator';
@@ -120,10 +120,7 @@ export class LoginComponent implements OnInit {
 
       if (_self.dataValidator.isTrue(res.success)) {
 
-    
         localStorage.setItem("loginId", res.result.loginId);
-  
-       
         localStorage.setItem("role", res.result.role);
         localStorage.setItem("fname", res.result.fname);
         localStorage.setItem("lname", res.result.lname);

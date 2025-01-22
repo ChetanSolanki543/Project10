@@ -13,10 +13,10 @@
  padding-bottom:0%;background-image: url(../../assets/files/wall.jpg);
 background-attachment: fixed;
 background-size: 100%;
-  height: 120vh;">
+  height: 105vh;">
 
   <div class="col-sm-4"></div>
-  <div class="col-sm-4">
+  <div class="col-sm-4" >
     <div class="card">
       <div class="card-body shadow-lg grad">
          <form>
@@ -120,22 +120,6 @@ background-size: 100%;
               class="alertRedColor" style=" color: red;" > {{'phone'| translate}} </span>
           </div>
 
-          <!-- <div style="padding-top:0.1%">
-            <span class="pt-2"><b>{{'Alternate Mobile' | translate}}</b>
-              <span class="required-field"></span></span>
-
-            <div class="col-sm-12">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-mobile grey-text"></i> </div>
-                </div>
-                <input type="text" name="alternateMobile" [(ngModel)]="form.data.alternateMobile" class="form-control"
-                  placeholder="{{'Enter Alternate Number' | translate}}">
-              </div>
-            </div><span  *ngIf="form.inputerror.alternateMobile != null"
-            class="alertRedColor" style=" color: red;" > {{'mobile'| translate}} </span>
-            <!-- <span class="alertRedColor" style=" color: red;"> {{form.inputerror.phone}} </span> 
-          <!-- </div>  -->
 
           <div style="padding-top:0.1%">
             <span class="pt-2"><b>{{'DOB' | translate}}</b>
@@ -176,8 +160,6 @@ background-size: 100%;
           <div class="row pt-3 pl-3 pb-3">
             <div class="col-md-3"></div>
             <div class="pt-2">
-
-
               <button (click)="submit()" class="btn btn-success mr-2">
                 {{'Sign up' | translate}}</button>
             </div>
@@ -189,9 +171,6 @@ background-size: 100%;
 
             </div>
           </div>
-
-
-
 
         </form>
       </div>

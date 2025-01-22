@@ -52,6 +52,7 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 //				cors.allowedHeaders("*");
 				cors.allowedMethods("GET", "POST", "PUT", "DELETE");
 				cors.allowCredentials(true);
+				System.out.println("cors mapping");
 			}
 
 			/**
@@ -61,6 +62,7 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 			@Override
 			public void addInterceptors(InterceptorRegistry registry) {
 				registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns("/Auth/**", "/User/profilePic/**", "/Shopping/profilePic/**");
+				System.out.println("Interceptors");
 			}
 
 			/*
