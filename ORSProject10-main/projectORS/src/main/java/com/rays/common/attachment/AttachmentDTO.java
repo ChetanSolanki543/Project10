@@ -37,6 +37,7 @@ public class AttachmentDTO extends AttachmentBaseDTO {
 
 	/**
 	 * Contains file data
+	 * LOB = large object binary (large object contain karne ka kaam karta hai)
 	 */
 	@Lob
 	@Column(name = "DOC")
